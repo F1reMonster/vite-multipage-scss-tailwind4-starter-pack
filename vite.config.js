@@ -1,8 +1,11 @@
 import { defineConfig } from "vite";
+import { resolve } from "path";
 import path from "path";
 import fs from "fs";
 import * as sass from "sass";
 import tailwindcss from "@tailwindcss/vite";
+import handlebars from "vite-plugin-handlebars";
+import images from "./src/data/images";
 
 function getHtmlEntryFiles(srcDir) {
 	const entry = {};
@@ -75,8 +78,19 @@ export default defineConfig({
 		open: true, // Відкривати браузер при запуску
 	},
 	optimizeDeps: {
-		entries: 'src/**/*{.html,.css,.scss,.js}'
+		entries: "src/**/*{.html,.css,.scss,.js}",
 	},
 
-	plugins: [tailwindcss()],
+	plugins: [
+		tailwindcss(),
+		handlebars({
+			partialDirectory: resolve("src", "partials"),
+			context: {
+				images
+			},
+
+			// декілька
+			// context: { ...images, ...data }
+		}),
+	],
 });

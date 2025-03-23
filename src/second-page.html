@@ -1,117 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/img/vite.svg" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Vite + Multipage + SCSS + Tailwind4</title>
-		<link rel="stylesheet" href="/styles/scss/styles.scss">
-		<link rel="stylesheet" href="/styles/tailwindcss/styles.css">
-	</head>
+	{{>components/head index=" > second-page"}}
 	<body>
+		{{>components/header color='text-green-500' page-name="Second page"}}
 		<div class="container">
-			<h1 class="text-3xl font-bold text-center text-amber-600">Second page</h1>
-			<h2 class="mt-2 text-4xl font-bold text-center text-green-500 font-gilroy">Vite + Multipage + SCSS + Tailwind4</h2>
-			<nav class="nav">
-				<ul class="flex gap-1.5 items-center flex-wrap">
-					<li class="shrink-0"><a class="flex items-center px-4 py-0.5 bg-sky-600 text-white rounded-lg transition-all hover:bg-sky-800" href="index.html">Index page</a></li>
-					<li class="shrink-0"><a class="flex items-center px-4 py-0.5 bg-sky-600 text-white rounded-lg transition-all hover:bg-sky-800" href="second-page.html">Second page</a></li>
-					<li class="shrink-0"><a class="flex items-center px-4 py-0.5 bg-sky-600 text-white rounded-lg transition-all hover:bg-sky-800" href="third-page.html">Third page</a></li>
-				</ul>
-			</nav>
 			
-			<div class="gap-2 mt-4 columns-2 sm:columns-3 lg:columns-4">
-				<div class="relative rounded-lg overflow-clip">
-					<div class="absolute inset-0 flex items-center justify-center -z-1">
-						<div class="img-loader"></div>
-					</div>
-					<img decoding="async" src="/img/img-01.jpg" alt="" loading="lazy" />
-				</div>
-				<div class="relative mt-2 rounded-lg overflow-clip">
-					<div class="absolute inset-0 flex items-center justify-center -z-1">
-						<div class="img-loader"></div>
-					</div>
-					<img decoding="async" src="/img/girl-7795467_1280.webp" alt="" loading="lazy" />
-				</div>
-				<div class="relative mt-2 rounded-lg overflow-clip">
-					<div class="absolute inset-0 flex items-center justify-center -z-1">
-						<div class="img-loader"></div>
-					</div>
-					<img decoding="async" src="/img/img-03.jpg" alt="" loading="lazy" />
-				</div>
-				<div class="relative mt-2 rounded-lg overflow-clip">
-					<div class="absolute inset-0 flex items-center justify-center -z-1">
-						<div class="img-loader"></div>
-					</div>
-					<img decoding="async" src="/img/img-04.jpg" alt="" loading="lazy" />
-				</div>
-				<div class="relative mt-2 rounded-lg overflow-clip">
-					<div class="absolute inset-0 flex items-center justify-center -z-1">
-						<div class="img-loader"></div>
-					</div>
-					<img decoding="async" src="/img/img-54.png" alt="" loading="lazy" />
-				</div>
-				<div class="relative mt-2 rounded-lg overflow-clip">
-					<div class="absolute inset-0 flex items-center justify-center -z-1">
-						<div class="img-loader"></div>
-					</div>
-					<img decoding="async" src="/img/girl-8839335_1280.jpg" alt="" loading="lazy" />
-				</div>
-				<div class="relative mt-2 rounded-lg overflow-clip">
-					<div class="absolute inset-0 flex items-center justify-center -z-1">
-						<div class="img-loader"></div>
-					</div>
-					<img decoding="async" src="/img/ai-generated-7930794_1280.jpg" alt="" loading="lazy" />
-				</div>
-				<div class="relative mt-2 rounded-lg overflow-clip">
-					<div class="absolute inset-0 flex items-center justify-center -z-1">
-						<div class="img-loader"></div>
-					</div>
-					<img decoding="async" src="/img/ai-generated-8990176_1280.jpg" alt="" loading="lazy" />
-				</div>
-				<div class="relative mt-2 rounded-lg overflow-clip">
-					<img decoding="async" src="/img/girl-8585105_1280.png" alt="" loading="lazy" />
-				</div>
-				<div class="relative mt-2 rounded-lg overflow-clip">
-					<div class="absolute inset-0 flex items-center justify-center -z-1">
-						<div class="img-loader"></div>
-					</div>
-					<img decoding="async" src="/img/cyber-punk-8504498_1920.jpg" alt="" loading="lazy" />
-				</div>
-
-				<div class="relative mt-2 rounded-lg overflow-clip">
-					<div class="absolute inset-0 flex items-center justify-center -z-1">
-						<div class="img-loader"></div>
-					</div>
-					<img decoding="async" src="/img/cyberpunk-8177474_1280.jpg" alt="" loading="lazy" />
-				</div>
-				<div class="relative mt-2 rounded-lg overflow-clip">
-					<div class="absolute inset-0 flex items-center justify-center -z-1">
-						<div class="img-loader"></div>
-					</div>
-					<img decoding="async" src="/img/ai-generated-7930794_1280.jpg" alt="" loading="lazy" />
-				</div>
-				<div class="relative mt-2 rounded-lg overflow-clip">
-					<div class="absolute inset-0 flex items-center justify-center -z-1">
-						<div class="img-loader"></div>
-					</div>
-					<img decoding="async" src="/img/img-02.jpg" alt="" loading="lazy" />
-				</div>
-
-				<div class="relative mt-2 rounded-lg overflow-clip">
-					<div class="absolute inset-0 flex items-center justify-center -z-1">
-						<div class="img-loader"></div>
-					</div>
-					<img decoding="async" src="/img/girl-8728976_1280.webp" alt="" loading="lazy" />
-				</div>
-				<div class="relative mt-2 rounded-lg overflow-clip">
-					<div class="absolute inset-0 flex items-center justify-center -z-1">
-						<div class="img-loader"></div>
-					</div>
-					<img decoding="async" src="/img/cyber-8066486_1280.png" alt="" loading="lazy" />
-				</div>
-			</div>
-		</div>
+			{{>components/nav}}
+			
+			{{>components/image-list}}
 
 		</div>
 
