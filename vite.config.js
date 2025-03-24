@@ -66,8 +66,8 @@ export default defineConfig({
 					return "assets/[name][extname]";
 				},
 
-				entryFileNames: `assets/[name].js`,
-				chunkFileNames: `assets/[name].js`,
+				entryFileNames: `assets/js/[name].js`,
+				chunkFileNames: `assets/js/[name].js`,
 			},
 		},
 		outDir: "../dist",

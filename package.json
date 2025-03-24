@@ -1,5 +1,5 @@
 {
-	"name": "vite-multipage-scss-tailwind",
+	"name": "vite-multipage-scss-tailwindcss4-handlebars",
 	"author": "github.com/F1reMonster",
 	"description": "Vite FrontEnd Starter Kit for build static multi-pages website use Vite builder",
 	"keywords": [
@@ -19,9 +19,10 @@
 		"optimized",
 		"favicon",
 		"tailwindcss4",
-		"tailwindcss"
+		"tailwindcss",
+		"handlebars"
 	],
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
@@ -29,12 +30,12 @@
 		"preview": "vite preview"
 	},
 	"devDependencies": {
-		"sass": "^1.85.0",
-		"vite": "^6.1.0",
+		"sass": "^1.86.0",
+		"vite": "^6.2.3",
 		"vite-plugin-handlebars": "^2.0.0"
 	},
 	"dependencies": {
-		"@tailwindcss/vite": "^4.0.8",
-		"tailwindcss": "^4.0.8"
+		"@tailwindcss/vite": "^4.0.15",
+		"tailwindcss": "^4.0.15"
 	}
 }
