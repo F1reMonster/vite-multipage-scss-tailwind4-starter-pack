@@ -1,7 +1,7 @@
 
 # Vite | SCSS | TailwindCss v4 | Handlebars - Starter kit for Multipages Project
 
-⚡️ Starter kit for Multipages project with TailwindCSS v4, pre-processor SCSS, partials plugin Handlebars and Vitejs for projects  😜
+⚡️ Starter kit for multipages static project with Vite, TailwindCSS v4, SCSS, Handlebars  😜
 
 ## Live
 
