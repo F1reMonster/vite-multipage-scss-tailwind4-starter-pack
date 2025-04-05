@@ -52,13 +52,12 @@ export default defineConfig({
 					if (/\.css$/.test(assetInfo.name)) {
 						return `assets/css/styles.css`;
 					}
-					if (/\.png$|\.jpe?g$|\.svg$|\.gif$|\.webp$/.test(assetInfo.name)) {
-						return "assets/img/[name][extname]"; 
+					if (/\.png$|\.jpe?g$|\.gif$|\.webp$/.test(assetInfo.name)) {
+						return "assets/img/[name][extname]";
 					}
 					if (/\.svg$/.test(assetInfo.name)) {
-						return "assets/img/svg/[name][extname]"; 
+						return "assets/img/svg/[name][extname]";
 					}
-
 					if (/\.js$/.test(assetInfo.name)) {
 						return `assets/js/[name][extname]`;
 					}
@@ -79,7 +78,7 @@ export default defineConfig({
 	server: {
 		port: 3000, // Порт локального сервера
 		open: true, // Відкривати браузер при запуску
-		host: true
+		host: true,
 	},
 	optimizeDeps: {
 		entries: "src/**/*{.html,.css,.scss,.js}",
@@ -90,7 +89,7 @@ export default defineConfig({
 		handlebars({
 			partialDirectory: resolve("src", "partials"),
 			context: {
-				images
+				images,
 			},
 
 			// щоб декілька - імпортуємо json файл і через кому додаємо
