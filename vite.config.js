@@ -76,6 +76,7 @@ export default defineConfig({
 	server: {
 		port: 3000, // Порт локального сервера
 		open: true, // Відкривати браузер при запуску
+		host: true
 	},
 	optimizeDeps: {
 		entries: "src/**/*{.html,.css,.scss,.js}",
@@ -89,8 +90,8 @@ export default defineConfig({
 				images
 			},
 
-			// декілька
-			// context: { ...images, ...data }
+			// щоб декілька - імпортуємо json файл і через кому додаємо
+			// context: { images, data }
 		}),
 	],
 });
