@@ -53,7 +53,10 @@ export default defineConfig({
 						return `assets/css/styles.css`;
 					}
 					if (/\.png$|\.jpe?g$|\.svg$|\.gif$|\.webp$/.test(assetInfo.name)) {
-						return "assets/img/[name][extname]"; // Без хешу
+						return "assets/img/[name][extname]"; 
+					}
+					if (/\.svg$/.test(assetInfo.name)) {
+						return "assets/img/svg/[name][extname]"; 
 					}
 
 					if (/\.js$/.test(assetInfo.name)) {
