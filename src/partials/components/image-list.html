@@ -1,10 +1,10 @@
 <div class="gap-2 mt-4 columns-2 sm:columns-3 lg:columns-4 [:not]">
-	{{#each images}}
-	<div class="relative rounded-lg overflow-clip first:mt-0 mt-2">
-		<div class="absolute inset-0 flex items-center justify-center -z-1">
-			<div class="img-loader"></div>
-		</div>
-		<img decoding="async" src="{{src}}" alt="{{alt}}" loading="lazy" />
-	</div>
-	{{/each}}
+  {{#each images}}
+  <div class="relative rounded-lg overflow-clip first:mt-0 mt-2">
+    <div class="absolute inset-0 flex items-center justify-center -z-1">
+      <div class="img-loader"></div>
+    </div>
+    <img decoding="async" src="{{src}}" alt="{{alt}}" loading="lazy" />
+  </div>
+  {{/each}}
 </div>
