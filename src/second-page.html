@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-  {{>components/head index=" > second-page"}}
-  <body>
-    {{>components/header color='text-green-500' page-name="Second page"}}
-    <div class="container">
-			{{>components/nav}} 
-			{{>components/image-list}}
-		</div>
+   {{>components/head index=" > second-page"}}
+   <body>
+      {{>components/header color='text-green-500' page-name="Second page"}}
+      <div class="container">{{>components/nav}} {{>components/image-list}}</div>
 
-    <script type="module" src="/js/app.js"></script>
-  </body>
+      <script type="module" src="/js/app.js"></script>
+   </body>
 </html>
